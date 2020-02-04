@@ -15,7 +15,7 @@ class User extends Component {
             <img src={picture.large} />
             <p>{name.first}</p>
             <button onClick={this.toggleDetails}>Show Details</button>
-            <UserDetails show={this.state.showDetails} />
+            <UserDetails show={this.state.showDetails} user={this.props.user}/>
         </div>
      )
    }

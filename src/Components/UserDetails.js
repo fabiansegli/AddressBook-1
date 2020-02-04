@@ -4,7 +4,7 @@ const UserDetails = (props) => {
     if (props.show) {
         return (
             <div>
-                <p>Details</p> 
+                <p>{props.user.email}</p> 
             </div>
         )
     } else {
